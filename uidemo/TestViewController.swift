@@ -9,6 +9,8 @@
 import UIKit
 
 class TestViewController: UIViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,9 @@ class TestViewController: UIViewController {
         print(">>>>>>>>>>a \(a) b \(b)")
         swapTwoValues(&a, &b)
         print(">>>>>>>>>>a \(a) b \(b)")
+        
+        
+        
     }
     
     func swapTwoValues<T>(inout a: T, inout _ b: T){

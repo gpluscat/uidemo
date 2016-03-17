@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "uidemo-Swift.h"
 #import "CustomCell.h"
+#import "UIImageView+WebCache.h"
+#import "JSONModelLib.h"
+#import "DiscoverModel.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *iTableView;
@@ -39,8 +42,26 @@
     [self.lst addObject:@"EnumViewController"];
     [self.lst addObject:@"FuncViewController"];
     [self.lst addObject:@"AlamofireViewController"];
+    [self.lst addObject:@"TimeViewController"];
+    [self.lst addObject:@"LabelViewController"];
+    
     
     [self.iTableView registerNib:[UINib nibWithNibName:@"CustomCell" bundle:nil] forCellReuseIdentifier:@"kCell"];
+    
+    UIImageView *picView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [self.iTableView addSubview:picView];
+    
+    [picView sd_setImageWithURL:[NSURL URLWithString:@"http://180.235.65.220:4869/5d596a429582e230a66251ff4c72abb0"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        NSLog(@">>>>>>>>>>image width %f, height %f", image.size.width, image.size.height);
+    }];
+    
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"json" ofType:@"txt"];
+    NSString *jsonStr = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    
+    DiscoverModel *discoverModel = [[DiscoverModel alloc] initWithString:jsonStr error:nil];
+    ContextModel *contextModel = discoverModel.context[0];
+    NSLog(@">>>>>>>>>>discoverModel %@", discoverModel.context);
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -58,27 +79,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if(indexPath.row == 0)
-    {
-        TestViewController *controller = [[TestViewController alloc] init];
-        [self.navigationController pushViewController:controller animated:YES];
-    }
-    else if(indexPath.row == 1){
-        ClosureViewController *controller = [[ClosureViewController alloc] init];
-        [self.navigationController pushViewController:controller animated:YES];
-    }
-    else if(indexPath.row == 2) {
-        EnumViewController *controller = [[EnumViewController alloc] init];
-        [self.navigationController pushViewController:controller animated:YES];
-    }
-    else if(indexPath.row == 3) {
-        FuncViewController *controller = [[FuncViewController alloc] init];
-        [self.navigationController pushViewController:controller animated:YES];
-    }
-    else if(indexPath.row == 4) {
-        AlamofireViewController *controller = [[AlamofireViewController alloc] init];
-        [self.navigationController pushViewController:controller animated:YES];
-    }
+    NSString *title = self.lst[indexPath.row];
+    id obj = [[NSClassFromString(title) alloc] init];
+    [self.navigationController pushViewController:obj animated:YES];
 }
 
 @end

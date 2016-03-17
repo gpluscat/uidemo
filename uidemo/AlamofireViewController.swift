@@ -18,6 +18,22 @@ class AlamofireViewController: UIViewController {
         view.backgroundColor = UIColor.whiteColor()
         
         test1()
+        
+        let imageView = UIImageView()
+        imageView.frame = CGRectMake(0, 0, 345, 4831)
+        imageView.contentMode = .ScaleAspectFill
+        self.view.addSubview(imageView)
+    
+        Alamofire.request(.GET, "http://180.235.65.220:4869/5d596a429582e230a66251ff4c72abb0").responseData { response -> Void in
+            let data: NSData? = response.data
+            if let d = data {
+                let image: UIImage? = UIImage(data: d)
+                if let t = image {
+                    print("image width \(t.size.width) height \(t.size.height)")
+                }
+                imageView.image = image
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

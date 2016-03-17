@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		55714E74469950DEC9DEF438 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3753566CBB3FDA1E6FA1BED /* Pods.framework */; };
+		B20B8D9D1C97FDB600875FA0 /* LabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20B8D9C1C97FDB600875FA0 /* LabelViewController.m */; };
 		B210A4951C473C9D0034DBD6 /* EnumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210A4941C473C9D0034DBD6 /* EnumViewController.swift */; };
 		B210A4991C4742D10034DBD6 /* FuncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210A4981C4742D10034DBD6 /* FuncViewController.swift */; };
 		B210A49B1C47845F0034DBD6 /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210A49A1C47845F0034DBD6 /* AlamofireViewController.swift */; };
+		B234B2AF1C8FFBF700D6BDF0 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B234B2AE1C8FFBF700D6BDF0 /* TimeViewController.m */; };
+		B234B2B21C8FFD7D00D6BDF0 /* AdBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B234B2B11C8FFD7D00D6BDF0 /* AdBannerView.m */; };
+		B259D60E1C72EEFE0080D3FB /* DiscoverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B259D60D1C72EEFE0080D3FB /* DiscoverModel.m */; };
+		B259D6141C72F3BB0080D3FB /* json.txt in Resources */ = {isa = PBXBuildFile; fileRef = B259D6131C72F3BB0080D3FB /* json.txt */; };
 		B286768A1C43A1EE004DB58C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B28676891C43A1EE004DB58C /* main.m */; };
 		B286768D1C43A1EE004DB58C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B286768C1C43A1EE004DB58C /* AppDelegate.m */; };
 		B28676901C43A1EE004DB58C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B286768F1C43A1EE004DB58C /* ViewController.m */; };
@@ -21,6 +26,8 @@
 		B28676AF1C43A327004DB58C /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28676AE1C43A327004DB58C /* TestViewController.swift */; };
 		B28678A21C43A735004DB58C /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B28678A01C43A735004DB58C /* CustomCell.m */; };
 		B28678A31C43A735004DB58C /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B28678A11C43A735004DB58C /* CustomCell.xib */; };
+		B2903F021C5F2CFD00A987B0 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2903F011C5F2CFD00A987B0 /* ImageIO.framework */; };
+		B2903F041C5F2D0400A987B0 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2903F031C5F2D0400A987B0 /* SDWebImage.framework */; };
 		B2ADC39B1C463817003D0A42 /* ClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADC39A1C463817003D0A42 /* ClosureViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,9 +44,18 @@
 /* Begin PBXFileReference section */
 		6D5BB8190429592C189197B6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A3753566CBB3FDA1E6FA1BED /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20B8D9B1C97FDB600875FA0 /* LabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelViewController.h; sourceTree = "<group>"; };
+		B20B8D9C1C97FDB600875FA0 /* LabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelViewController.m; sourceTree = "<group>"; };
 		B210A4941C473C9D0034DBD6 /* EnumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumViewController.swift; sourceTree = "<group>"; };
 		B210A4981C4742D10034DBD6 /* FuncViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuncViewController.swift; sourceTree = "<group>"; };
 		B210A49A1C47845F0034DBD6 /* AlamofireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireViewController.swift; sourceTree = "<group>"; };
+		B234B2AD1C8FFBF700D6BDF0 /* TimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
+		B234B2AE1C8FFBF700D6BDF0 /* TimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
+		B234B2B01C8FFD7D00D6BDF0 /* AdBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdBannerView.h; sourceTree = "<group>"; };
+		B234B2B11C8FFD7D00D6BDF0 /* AdBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdBannerView.m; sourceTree = "<group>"; };
+		B259D60C1C72EEFE0080D3FB /* DiscoverModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverModel.h; sourceTree = "<group>"; };
+		B259D60D1C72EEFE0080D3FB /* DiscoverModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverModel.m; sourceTree = "<group>"; };
+		B259D6131C72F3BB0080D3FB /* json.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json.txt; sourceTree = "<group>"; };
 		B28676851C43A1EE004DB58C /* uidemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uidemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28676891C43A1EE004DB58C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B286768B1C43A1EE004DB58C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +74,8 @@
 		B286789F1C43A735004DB58C /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		B28678A01C43A735004DB58C /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		B28678A11C43A735004DB58C /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		B2903F011C5F2CFD00A987B0 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		B2903F031C5F2D0400A987B0 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "Pods/../build/Debug-iphoneos/SDWebImage.framework"; sourceTree = "<group>"; };
 		B2ADC39A1C463817003D0A42 /* ClosureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureViewController.swift; sourceTree = "<group>"; };
 		C509EE533D44545DF753B3CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2903F041C5F2D0400A987B0 /* SDWebImage.framework in Frameworks */,
+				B2903F021C5F2CFD00A987B0 /* ImageIO.framework in Frameworks */,
 				55714E74469950DEC9DEF438 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +104,8 @@
 		9E2636284BF0FB64F9CC45AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2903F031C5F2D0400A987B0 /* SDWebImage.framework */,
+				B2903F011C5F2CFD00A987B0 /* ImageIO.framework */,
 				A3753566CBB3FDA1E6FA1BED /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -116,6 +138,8 @@
 				B286768C1C43A1EE004DB58C /* AppDelegate.m */,
 				B286768E1C43A1EE004DB58C /* ViewController.h */,
 				B286768F1C43A1EE004DB58C /* ViewController.m */,
+				B259D60C1C72EEFE0080D3FB /* DiscoverModel.h */,
+				B259D60D1C72EEFE0080D3FB /* DiscoverModel.m */,
 				B286789F1C43A735004DB58C /* CustomCell.h */,
 				B28678A01C43A735004DB58C /* CustomCell.m */,
 				B28678A11C43A735004DB58C /* CustomCell.xib */,
@@ -129,7 +153,14 @@
 				B210A4941C473C9D0034DBD6 /* EnumViewController.swift */,
 				B210A4981C4742D10034DBD6 /* FuncViewController.swift */,
 				B210A49A1C47845F0034DBD6 /* AlamofireViewController.swift */,
+				B20B8D9B1C97FDB600875FA0 /* LabelViewController.h */,
+				B20B8D9C1C97FDB600875FA0 /* LabelViewController.m */,
+				B234B2AD1C8FFBF700D6BDF0 /* TimeViewController.h */,
+				B234B2AE1C8FFBF700D6BDF0 /* TimeViewController.m */,
+				B234B2B01C8FFD7D00D6BDF0 /* AdBannerView.h */,
+				B234B2B11C8FFD7D00D6BDF0 /* AdBannerView.m */,
 				B28676AD1C43A326004DB58C /* uidemo-Bridging-Header.h */,
+				B259D6131C72F3BB0080D3FB /* json.txt */,
 			);
 			path = uidemo;
 			sourceTree = "<group>";
@@ -247,6 +278,7 @@
 				B28676951C43A1EE004DB58C /* Assets.xcassets in Resources */,
 				B28678A31C43A735004DB58C /* CustomCell.xib in Resources */,
 				B28676931C43A1EE004DB58C /* Main.storyboard in Resources */,
+				B259D6141C72F3BB0080D3FB /* json.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,14 +345,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2ADC39B1C463817003D0A42 /* ClosureViewController.swift in Sources */,
+				B259D60E1C72EEFE0080D3FB /* DiscoverModel.m in Sources */,
 				B28676901C43A1EE004DB58C /* ViewController.m in Sources */,
 				B210A4951C473C9D0034DBD6 /* EnumViewController.swift in Sources */,
 				B286768D1C43A1EE004DB58C /* AppDelegate.m in Sources */,
 				B210A49B1C47845F0034DBD6 /* AlamofireViewController.swift in Sources */,
 				B28676AF1C43A327004DB58C /* TestViewController.swift in Sources */,
 				B286768A1C43A1EE004DB58C /* main.m in Sources */,
+				B234B2AF1C8FFBF700D6BDF0 /* TimeViewController.m in Sources */,
 				B210A4991C4742D10034DBD6 /* FuncViewController.swift in Sources */,
 				B28678A21C43A735004DB58C /* CustomCell.m in Sources */,
+				B234B2B21C8FFD7D00D6BDF0 /* AdBannerView.m in Sources */,
+				B20B8D9D1C97FDB600875FA0 /* LabelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,14 +484,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = uidemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = net.huiyutech.uidemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "uidemo/uidemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -465,13 +506,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = uidemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = net.huiyutech.uidemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "uidemo/uidemo-Bridging-Header.h";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};
