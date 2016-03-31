@@ -14,8 +14,18 @@
 		B210A49B1C47845F0034DBD6 /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210A49A1C47845F0034DBD6 /* AlamofireViewController.swift */; };
 		B234B2AF1C8FFBF700D6BDF0 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B234B2AE1C8FFBF700D6BDF0 /* TimeViewController.m */; };
 		B234B2B21C8FFD7D00D6BDF0 /* AdBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B234B2B11C8FFD7D00D6BDF0 /* AdBannerView.m */; };
+		B24222CC1C9A846600BEE51D /* PullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24222CA1C9A846600BEE51D /* PullViewController.swift */; };
 		B259D60E1C72EEFE0080D3FB /* DiscoverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B259D60D1C72EEFE0080D3FB /* DiscoverModel.m */; };
 		B259D6141C72F3BB0080D3FB /* json.txt in Resources */ = {isa = PBXBuildFile; fileRef = B259D6131C72F3BB0080D3FB /* json.txt */; };
+		B27D7A5A1CA929D000B11066 /* SqViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27D7A591CA929D000B11066 /* SqViewController.m */; };
+		B27D7A5C1CA92A3000B11066 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B27D7A5B1CA92A3000B11066 /* libsqlite3.tbd */; };
+		B27D7A5E1CA92C0C00B11066 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B27D7A5D1CA92C0C00B11066 /* libsqlite3.0.tbd */; };
+		B27D7A611CA92DE000B11066 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B27D7A5F1CA92DE000B11066 /* Model.xcdatamodeld */; };
+		B27D7A631CA92E8D00B11066 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27D7A621CA92E8D00B11066 /* CoreData.framework */; };
+		B27D7A6C1CA92F5200B11066 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B27D7A651CA92F5100B11066 /* Person+CoreDataProperties.m */; };
+		B27D7A6D1CA92F5200B11066 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B27D7A671CA92F5100B11066 /* Person.m */; };
+		B27D7A6E1CA92F5200B11066 /* Card+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B27D7A691CA92F5100B11066 /* Card+CoreDataProperties.m */; };
+		B27D7A6F1CA92F5200B11066 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = B27D7A6B1CA92F5100B11066 /* Card.m */; };
 		B286768A1C43A1EE004DB58C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B28676891C43A1EE004DB58C /* main.m */; };
 		B286768D1C43A1EE004DB58C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B286768C1C43A1EE004DB58C /* AppDelegate.m */; };
 		B28676901C43A1EE004DB58C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B286768F1C43A1EE004DB58C /* ViewController.m */; };
@@ -53,9 +63,24 @@
 		B234B2AE1C8FFBF700D6BDF0 /* TimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
 		B234B2B01C8FFD7D00D6BDF0 /* AdBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdBannerView.h; sourceTree = "<group>"; };
 		B234B2B11C8FFD7D00D6BDF0 /* AdBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdBannerView.m; sourceTree = "<group>"; };
+		B24222CA1C9A846600BEE51D /* PullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullViewController.swift; sourceTree = "<group>"; };
 		B259D60C1C72EEFE0080D3FB /* DiscoverModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverModel.h; sourceTree = "<group>"; };
 		B259D60D1C72EEFE0080D3FB /* DiscoverModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverModel.m; sourceTree = "<group>"; };
 		B259D6131C72F3BB0080D3FB /* json.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json.txt; sourceTree = "<group>"; };
+		B27D7A581CA929D000B11066 /* SqViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqViewController.h; sourceTree = "<group>"; };
+		B27D7A591CA929D000B11066 /* SqViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqViewController.m; sourceTree = "<group>"; };
+		B27D7A5B1CA92A3000B11066 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		B27D7A5D1CA92C0C00B11066 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		B27D7A601CA92DE000B11066 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		B27D7A621CA92E8D00B11066 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B27D7A641CA92F5100B11066 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B27D7A651CA92F5100B11066 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B27D7A661CA92F5100B11066 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		B27D7A671CA92F5100B11066 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		B27D7A681CA92F5100B11066 /* Card+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Card+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B27D7A691CA92F5100B11066 /* Card+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Card+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B27D7A6A1CA92F5100B11066 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		B27D7A6B1CA92F5100B11066 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		B28676851C43A1EE004DB58C /* uidemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uidemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28676891C43A1EE004DB58C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B286768B1C43A1EE004DB58C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -85,6 +110,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B27D7A631CA92E8D00B11066 /* CoreData.framework in Frameworks */,
+				B27D7A5E1CA92C0C00B11066 /* libsqlite3.0.tbd in Frameworks */,
+				B27D7A5C1CA92A3000B11066 /* libsqlite3.tbd in Frameworks */,
 				B2903F041C5F2D0400A987B0 /* SDWebImage.framework in Frameworks */,
 				B2903F021C5F2CFD00A987B0 /* ImageIO.framework in Frameworks */,
 				55714E74469950DEC9DEF438 /* Pods.framework in Frameworks */,
@@ -104,6 +132,9 @@
 		9E2636284BF0FB64F9CC45AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B27D7A621CA92E8D00B11066 /* CoreData.framework */,
+				B27D7A5D1CA92C0C00B11066 /* libsqlite3.0.tbd */,
+				B27D7A5B1CA92A3000B11066 /* libsqlite3.tbd */,
 				B2903F031C5F2D0400A987B0 /* SDWebImage.framework */,
 				B2903F011C5F2CFD00A987B0 /* ImageIO.framework */,
 				A3753566CBB3FDA1E6FA1BED /* Pods.framework */,
@@ -153,14 +184,26 @@
 				B210A4941C473C9D0034DBD6 /* EnumViewController.swift */,
 				B210A4981C4742D10034DBD6 /* FuncViewController.swift */,
 				B210A49A1C47845F0034DBD6 /* AlamofireViewController.swift */,
+				B24222CA1C9A846600BEE51D /* PullViewController.swift */,
 				B20B8D9B1C97FDB600875FA0 /* LabelViewController.h */,
 				B20B8D9C1C97FDB600875FA0 /* LabelViewController.m */,
 				B234B2AD1C8FFBF700D6BDF0 /* TimeViewController.h */,
 				B234B2AE1C8FFBF700D6BDF0 /* TimeViewController.m */,
+				B27D7A581CA929D000B11066 /* SqViewController.h */,
+				B27D7A591CA929D000B11066 /* SqViewController.m */,
 				B234B2B01C8FFD7D00D6BDF0 /* AdBannerView.h */,
 				B234B2B11C8FFD7D00D6BDF0 /* AdBannerView.m */,
 				B28676AD1C43A326004DB58C /* uidemo-Bridging-Header.h */,
 				B259D6131C72F3BB0080D3FB /* json.txt */,
+				B27D7A5F1CA92DE000B11066 /* Model.xcdatamodeld */,
+				B27D7A641CA92F5100B11066 /* Person+CoreDataProperties.h */,
+				B27D7A651CA92F5100B11066 /* Person+CoreDataProperties.m */,
+				B27D7A661CA92F5100B11066 /* Person.h */,
+				B27D7A671CA92F5100B11066 /* Person.m */,
+				B27D7A681CA92F5100B11066 /* Card+CoreDataProperties.h */,
+				B27D7A691CA92F5100B11066 /* Card+CoreDataProperties.m */,
+				B27D7A6A1CA92F5100B11066 /* Card.h */,
+				B27D7A6B1CA92F5100B11066 /* Card.m */,
 			);
 			path = uidemo;
 			sourceTree = "<group>";
@@ -350,11 +393,18 @@
 				B210A4951C473C9D0034DBD6 /* EnumViewController.swift in Sources */,
 				B286768D1C43A1EE004DB58C /* AppDelegate.m in Sources */,
 				B210A49B1C47845F0034DBD6 /* AlamofireViewController.swift in Sources */,
+				B27D7A6D1CA92F5200B11066 /* Person.m in Sources */,
 				B28676AF1C43A327004DB58C /* TestViewController.swift in Sources */,
 				B286768A1C43A1EE004DB58C /* main.m in Sources */,
 				B234B2AF1C8FFBF700D6BDF0 /* TimeViewController.m in Sources */,
+				B27D7A6C1CA92F5200B11066 /* Person+CoreDataProperties.m in Sources */,
+				B24222CC1C9A846600BEE51D /* PullViewController.swift in Sources */,
 				B210A4991C4742D10034DBD6 /* FuncViewController.swift in Sources */,
+				B27D7A611CA92DE000B11066 /* Model.xcdatamodeld in Sources */,
 				B28678A21C43A735004DB58C /* CustomCell.m in Sources */,
+				B27D7A6F1CA92F5200B11066 /* Card.m in Sources */,
+				B27D7A6E1CA92F5200B11066 /* Card+CoreDataProperties.m in Sources */,
+				B27D7A5A1CA929D000B11066 /* SqViewController.m in Sources */,
 				B234B2B21C8FFD7D00D6BDF0 /* AdBannerView.m in Sources */,
 				B20B8D9D1C97FDB600875FA0 /* LabelViewController.m in Sources */,
 			);
@@ -576,6 +626,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B27D7A5F1CA92DE000B11066 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B27D7A601CA92DE000B11066 /* Model.xcdatamodel */,
+			);
+			currentVersion = B27D7A601CA92DE000B11066 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B286767D1C43A1EE004DB58C /* Project object */;
 }

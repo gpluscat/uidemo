@@ -24,6 +24,9 @@ class FuncViewController: UIViewController {
         
         let s = t ?? "3"
         print("s \(s)")
+        
+        let bounds = minMax([1, 2, 3, 4, 8])
+    
     }
     
     func test1(s1: String) {
@@ -37,6 +40,21 @@ class FuncViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func minMax(array: [Int]) -> (min: Int, max: Int) {
+        var currentMin = array[0]
+        var currentMax = array[0]
+        
+        for value in array {
+            if value < currentMin {
+                currentMin = value
+            }
+            else if value > currentMax {
+                currentMax = value
+            }
+        }
+        return (currentMin, currentMax)
     }
     
 

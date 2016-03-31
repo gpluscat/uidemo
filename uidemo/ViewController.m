@@ -44,7 +44,16 @@
     [self.lst addObject:@"AlamofireViewController"];
     [self.lst addObject:@"TimeViewController"];
     [self.lst addObject:@"LabelViewController"];
+    [self.lst addObject:@"PullViewController"];
+    [self.lst addObject:@"SqViewController"];
     
+    
+    NSString *str = @"#123# 111111 #6 5# 88888";
+    [self regularStr:str linkCallback:^(NSString *link) {
+        NSLog(@">>>>>>>>>>link %@", link);
+    } textCallback:^(NSString *text) {
+        NSLog(@">>>>>>>>>>text %@", text);
+    }];
     
     [self.iTableView registerNib:[UINib nibWithNibName:@"CustomCell" bundle:nil] forCellReuseIdentifier:@"kCell"];
     
@@ -64,6 +73,35 @@
     NSLog(@">>>>>>>>>>discoverModel %@", discoverModel.context);
 }
 
+- (void)regularStr:(NSString *)str linkCallback:(void (^)(NSString *link))linkCallback textCallback:(void (^)(NSString *text))textCallback
+{
+    NSString *pattern = @"#(.*?)#";
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:0 error:nil];
+    NSArray *matches = [regex matchesInString:str options:0 range:NSMakeRange(0, str.length)];
+    
+    NSUInteger lastIdx = 0;
+    for (NSTextCheckingResult *match in matches) {
+        NSRange range = match.range;
+        if(range.location > lastIdx) {
+            NSString *text = [str substringWithRange:NSMakeRange(lastIdx, range.location - lastIdx)];
+            if(textCallback){
+                textCallback(text);
+            }
+        }
+        NSString *link = [str substringWithRange:[match rangeAtIndex:1]];
+        if(linkCallback){
+            linkCallback(link);
+        }
+        lastIdx = range.location + range.length;
+    }
+    if(lastIdx < str.length) {
+        NSString *text = [str substringFromIndex:lastIdx];
+        if(textCallback){
+            textCallback(text);
+        }
+    }
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.lst.count;
@@ -79,9 +117,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *title = self.lst[indexPath.row];
-    id obj = [[NSClassFromString(title) alloc] init];
-    [self.navigationController pushViewController:obj animated:YES];
+    
+    
+    if(indexPath.row == 7) {
+        PullViewController *controller = [[PullViewController alloc] init];
+        [self.navigationController pushViewController:controller animated:YES];
+    }
+    else {
+        NSString *title = self.lst[indexPath.row];
+        id obj = [[NSClassFromString(title) alloc] init];
+        [self.navigationController pushViewController:obj animated:YES];
+    }
 }
 
 @end
